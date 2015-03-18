@@ -30,6 +30,7 @@
   "license": "MIT",
   "dependencies": {
     "mandatory": "^1.0.0",
+    "simple-ssh": "^0.8.2",
     "verror": "^1.6.0"
   },
   "devDependencies": {
