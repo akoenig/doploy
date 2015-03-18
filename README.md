@@ -7,10 +7,6 @@ A remote provisioning manager for the dokku platform (work in progress).
 ```
 npm install -g doploy
 ```
-## Tests
-
-    gulp test
-
 
 ## License
 
