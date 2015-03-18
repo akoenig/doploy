@@ -1,0 +1,45 @@
+{
+  "name": "doploy",
+  "version": "1.0.0",
+  "description": "A remote provisioning manager for the dokku platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp",
+    "lint": "gulp lint",
+    "specs": "gulp specs",
+    "checkstyle": "gulp checkstyle"
+  },
+  "pre-commit": [
+    "lint",
+    "checkstyle",
+    "specs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:akoenig/doploy.git"
+  },
+  "engines": {
+    "node": "~0.12.0"
+  },
+  "keywords": [
+    "dokku",
+    "deployment",
+    "paas"
+  ],
+  "author": "André König <andre.koenig@posteo.de>",
+  "license": "MIT",
+  "dependencies": {
+    "mandatory": "^1.0.0",
+    "verror": "^1.6.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "gulp": "^3.8.10",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-mocha": "^2.0.0",
+    "jshint-stylish": "^1.0.0",
+    "run-sequence": "^1.0.2",
+    "pre-commit": "^0.0.9"
+  }
+}
