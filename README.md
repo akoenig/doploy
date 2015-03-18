@@ -1,6 +1,6 @@
 # doploy
 
-A remote provisioning manager for the dokku platform.
+A remote provisioning manager for the dokku platform (work in progress).
 
 ## Installation
 
