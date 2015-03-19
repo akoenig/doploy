@@ -33,7 +33,7 @@
     "mandatory": "^1.0.0",
     "map": "0.0.3",
     "simple-git": "^0.17.0",
-    "simple-ssh": "^0.8.2",
+    "simple-ssh": "akoenig/simple-ssh#passphrase",
     "verror": "^1.6.0"
   },
   "devDependencies": {
