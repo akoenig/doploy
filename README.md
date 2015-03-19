@@ -11,7 +11,6 @@ npm install -g doploy
 
     gulp test
 
-
 ## License
 
 MIT © 2015, [André König](http://andrekoenig.info) (andre.koenig@posteo.de)

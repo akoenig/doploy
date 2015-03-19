@@ -1,8 +1,9 @@
 {
   "name": "doploy",
-  "version": "1.0.0",
+  "version": "1.0.0-beta0",
   "description": "A remote provisioning manager for the dokku platform.",
   "main": "index.js",
+  "bin": "./doploy",
   "scripts": {
     "test": "gulp",
     "lint": "gulp lint",
@@ -29,11 +30,15 @@
   "author": "André König <andre.koenig@posteo.de>",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.0.0",
+    "commander": "^2.7.1",
     "debug": "^2.1.3",
     "mandatory": "^1.0.0",
     "map": "0.0.3",
+    "readline-sync": "^0.7.9",
     "simple-git": "^0.17.0",
     "simple-ssh": "akoenig/simple-ssh#passphrase",
+    "sshconf": "^2.0.0",
     "verror": "^1.6.0"
   },
   "devDependencies": {
