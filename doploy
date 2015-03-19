@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+/*
+ * doploy
+ *
+ * Copyright(c) 2015 André König <andre.koenig@posteo.de>
+ * MIT Licensed
+ *
+ */
+
+/**
+ * @author André König <andre.koenig@posteo.de>
+ *
+ */
+
+'use strict';
+
+var commander = require('commander');
+
+var pkg = require('./package.json');
+var duploy = require('./');
+var app = require('./app/')(duploy);
+
+commander
+    .version(pkg.version);
+
+commander
+    .command('install <host>')
+    .description('installs the app on the given host')
+    .action(app.install.bind(app));
+
+commander
+    .command('uninstall <host>')
+    .description('uninstalls the app on the given host')
+    .action(app.uninstall.bind(app));
+
+commander
+    .parse(process.argv);
