@@ -36,7 +36,6 @@
     "mandatory": "^1.0.0",
     "map": "0.0.3",
     "readline-sync": "^0.7.9",
-    "simple-git": "^0.17.0",
     "simple-ssh": "akoenig/simple-ssh#passphrase",
     "sshconf": "^2.0.0",
     "verror": "^1.6.0"
