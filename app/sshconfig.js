@@ -86,7 +86,7 @@ SSHConfig.prototype.load = function load (callback) {
         config.key = host.IdentityFile;
 
         if (!config.host || !config.user || !config.key) {
-            return callback(new VError('SSH configuration of host "%s" is incomplete'), self.$host);
+            return callback(new VError('SSH configuration of host "%s" is incomplete', self.$host));
         }
 
         self.$readKey(config.key, onReadKey);
