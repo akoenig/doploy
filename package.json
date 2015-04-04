@@ -1,6 +1,6 @@
 {
   "name": "doploy",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "A remote provisioning manager for the dokku platform.",
   "main": "index.js",
   "bin": "./doploy",
